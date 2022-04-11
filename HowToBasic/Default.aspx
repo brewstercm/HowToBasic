@@ -2,9 +2,11 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-        <p class="fs-4" aria-setsize="18" style="font-size: large; font-weight: bold;">Welcome to HowToBasic! Interested in learning something step by step? If so, then you&#39;ve come to the right place!</p>
-        <p class="fs-4" aria-setsize="18" style="font-size: large">&nbsp;</p>
-        <p class="fs-4" aria-setsize="18" style="font-size: large; font-family: Arial;">You can use the search feature to look up a tutorial or get started with one of our three most popular tutorials by clicking on any of the pictures below!</p>
+    <div class="jumbotron">
+        <h1>ASP.NET</h1>
+        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
+        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    </div>
 
     <div class="row">
         <div class="col-md-4">
@@ -12,6 +14,9 @@
             <p>
                 ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
             A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
+            </p>
+            <p>
+                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
             </p>
         </div>
         <div class="col-md-4">
