@@ -118,8 +118,7 @@ optgroup,
 select,
 textarea {
   color: inherit;
-  font: inherit;
-  margin: 0;
+  margin: 0 0 0 232px;
 }
 button {
   overflow: visible;
@@ -3121,6 +3120,8 @@ select[multiple].input-lg {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+    height: 21px;
+    width: 72px;
 }
 .btn:focus,
 .btn:active:focus,
