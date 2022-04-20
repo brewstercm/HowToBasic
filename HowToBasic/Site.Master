@@ -15,6 +15,22 @@
     <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
+    <style>
+        #Menu {  
+            
+            background-color: #FF869E;  
+            border-color: #FF869E;  
+        }  
+ 
+            #Menu ul li a {  
+                color: #ffffff;  
+            }  
+ 
+            #Menu ul li:hover {  
+                background-color: darkgray;  
+            }
+    </style>
+    
 </head>
 <body>
     <form runat="server">
@@ -38,30 +54,33 @@
             </Scripts>
         </asp:ScriptManager>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" runat="server" style="background-color: #FF4B6F;">
-            <a class="navbar-brand" href="#">
-                <img src="Content/Catalog/H2B Logo.png" class="d-inline-block align-top" alt="" id="imgLogo" />
-                <label for="imgLogo" class="d-inline-block align-Bottom"> How To Basic</label>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #FF4B6F;">
-                <span class="navbar-toggler-icon" id="btnToggleNav"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#" id="linkHome">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#" id="linkCreateTutorial">Create Tutorial <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#" id="linkCategories">Manage Categories <span class="sr-only">(current)</span></a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
+        <nav class="navbar navbar-expand-lg navbar-light" id="Menu" runat="server">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="Content/Catalog/H2B Logo.png" class="d-inline-block align-top" alt="" id="imgLogo" />
+                </a>
+                <p class="text-left" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: larger; color: #fff">How To Basic</p>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" style="background-color: darkgray">
+                    <span class="navbar-toggler-icon" id="btnToggleNav"></span>
+                    <%--<span class="icon-bar" style="background-color: #FF869E"></span>
+                        <span class="icon-bar" style="background-color: #FF869E"></span>
+                        <span class="icon-bar" style="background-color: #FF869E"></span>--%>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="Default.aspx" id="linkHome" style="color: #fff">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="Categories.aspx" id="linkCreateTutorial" style="color: #fff">Create Tutorial <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="Categories.aspx" id="linkCategories" style="color: #fff">Manage Categories <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="txtSearch">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="btnSearch">Search</button>
-                </form>
+                </div>
             </div>
         </nav>
 
@@ -70,7 +89,13 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+                <div class="mx-auto" style="background-color: #FF869E">
+                    <a class="navbar-brand" href="#">
+                        <img src="Content/Catalog/H2B Logo.png" class="d-inline-block align-top" alt="" id="imgLogo2" />
+                        <p class="text-left" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: larger; color: black" >How To Basic</p>
+                    </a>
+                    <p class="text-right">&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+                </div>
             </footer>
         </div>
 
