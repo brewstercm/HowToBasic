@@ -69,13 +69,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="Default.aspx" id="linkHome" style="color: #fff">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="Default" id="linkHome" style="color: #fff">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="Categories.aspx" id="linkCreateTutorial" style="color: #fff">Create Tutorial <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="Tutorials" id="linkCreateTutorial" style="color: #fff">Create Tutorial <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="Categories.aspx" id="linkCategories" style="color: #fff">Manage Categories <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="Categories" id="linkCategories" style="color: #fff">Manage Categories <span class="sr-only">(current)</span></a>
                         </li>
                     </ul>
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="txtSearch">
@@ -92,9 +92,8 @@
                 <div class="mx-auto" style="background-color: #FF869E">
                     <a class="navbar-brand" href="#">
                         <img src="Content/Catalog/H2B Logo.png" class="d-inline-block align-top" alt="" id="imgLogo2" />
-                        <p class="text-left" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: larger; color: black" >How To Basic</p>
                     </a>
-                    <p class="text-right">&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+                    <p class="text-right">&copy; <%: DateTime.Now.Year %> - HowToBasic</p>
                 </div>
             </footer>
         </div>
