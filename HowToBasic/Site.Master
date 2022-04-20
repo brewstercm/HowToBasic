@@ -12,7 +12,7 @@
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
 
-    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 </head>
@@ -38,19 +38,33 @@
             </Scripts>
         </asp:ScriptManager>
 
-        <div class="navbar navbar-light" style="background-color: #FF4B6F;">
-            <div class="container">
-                <div class="navbar-header">
-                    <a class="navbar-brand" runat="server" style="background-color: #FF4B6F; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: #000000; width: 116px; font-size: x-large;" dir="auto" media="all" visible="True"> HowToBasic&nbsp; </a>
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    &nbsp;<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="border-style: none; vertical-align: 0%; text-indent: 0in; word-spacing: 0em; line-height: 0in; right: auto;"></div>
-                </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" runat="server" style="background-color: #FF4B6F;">
+            <a class="navbar-brand" href="#">
+                <img src="Content/Catalog/H2B Logo.png" class="d-inline-block align-top" alt="" id="imgLogo" />
+                <label for="imgLogo" class="d-inline-block align-Bottom"> How To Basic</label>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #FF4B6F;">
+                <span class="navbar-toggler-icon" id="btnToggleNav"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" id="linkHome">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" id="linkCreateTutorial">Create Tutorial <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" id="linkCategories">Manage Categories <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="txtSearch">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="btnSearch">Search</button>
+                </form>
             </div>
-        </div>
+        </nav>
+
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
