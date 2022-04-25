@@ -60,6 +60,15 @@ namespace HowToBasic
         protected global::System.Web.UI.WebControls.TextBox txtTutorialLink;
 
         /// <summary>
+        /// txtTutorialThumbnail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtTutorialThumbnail;
+
+        /// <summary>
         /// btnSubmit control.
         /// </summary>
         /// <remarks>
@@ -87,12 +96,12 @@ namespace HowToBasic
         protected global::System.Web.UI.WebControls.Panel pnlEditTutorials;
 
         /// <summary>
-        /// GridView1 control.
+        /// gvTutorialList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.GridView gvTutorialList;
     }
 }
