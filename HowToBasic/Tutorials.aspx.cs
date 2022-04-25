@@ -57,7 +57,14 @@ namespace HowToBasic
                 {
                     conn.ConnectionString = WebConfigurationManager.ConnectionStrings["HTBConnectionString"].ConnectionString;
                     SqlCommand cmd = new SqlCommand();
-                    cmd.CommandText = "INSERT INTO Tutorials (CategoryID, DateCreated, TypeID, TutorialTitle, TutorialLink) VALUES ('" + ddlCategories.SelectedValue + "', '" + DateTime.Now + "','" + ddlType.SelectedValue + "', '" + txtTitle.Text + "','" + txtTutorialLink.Text +"');";
+                    cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                    cmd.CommandText = "addTutorial";
+                    cmd.Parameters.AddWithValue("@categoryID", ddlCategories.SelectedValue);
+                    cmd.Parameters.AddWithValue("@dateCreated", DateTime.Now);
+                    cmd.Parameters.AddWithValue("@typeID", ddlType.SelectedValue);
+                    cmd.Parameters.AddWithValue("@tutorialTitle", txtTitle.Text.Trim());
+                    cmd.Parameters.AddWithValue("@tutorialLink", txtTutorialLink.Text.Trim());
+                    cmd.Parameters.AddWithValue("@tutorialThumbnail", txtTutorialThumbnail.Text.Trim());
                     cmd.Connection = conn;
                     conn.Open();
                     cmd.ExecuteNonQuery();

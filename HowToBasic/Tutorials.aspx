@@ -38,12 +38,26 @@
         </div>
         <div class="row">
             <div class="col-sm-2">
+                <label for="txtTutorialThumbnail">Tutorial Thumbnail:</label>
+            </div>
+            <div class="col-sm-10">
+                <asp:TextBox ID="txtTutorialThumbnail" placeholder="Enter thumbnail link" runat="server"></asp:TextBox>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
                 <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
             </div>
             <div class ="col-sm-10">
                 <asp:Label ID="lblFeedback" runat="server" Visible="False"></asp:Label>
             </div>
         </div>
-        
+    </asp:Panel>
+    <asp:Panel ID="pnlEditTutorials" runat="server">
+        <div class="row">
+
+        </div>
+        <asp:GridView ID="gvTutorialList" runat="server" AutoGenerateColumns="False" CssClass="table table-striped">
+        </asp:GridView>
     </asp:Panel>
 </asp:Content>
