@@ -44,6 +44,12 @@
                 <asp:Label ID="lblFeedback" runat="server" Visible="False"></asp:Label>
             </div>
         </div>
-        
+    </asp:Panel>
+    <asp:Panel ID="pnlEditTutorials" runat="server">
+        <div class="row">
+
+        </div>
+        <asp:GridView ID="GridView1" runat="server">
+        </asp:GridView>
     </asp:Panel>
 </asp:Content>
