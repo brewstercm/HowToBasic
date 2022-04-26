@@ -19,7 +19,11 @@
         #Menu {  
             
             background-color: #FF869E;  
-            border-color: #FF869E;  
+            border-color: #FF869E;
+            top: 0px;
+            left: 0px;
+            height: 225px;
+            margin-bottom: 0px;
         }  
  
             #Menu ul li a {  
@@ -59,7 +63,7 @@
                 <a class="navbar-brand" href="#">
                     <img src="Content/Catalog/H2B Logo.png" class="d-inline-block align-top" alt="" id="imgLogo" />
                 </a>
-                <p class="text-left" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: larger; color: #fff">How To Basic</p>
+                <p class="newStyle1" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: larger; color: #fff">HowToBasic</p>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" style="background-color: darkgray">
                     <span class="navbar-toggler-icon" id="btnToggleNav"></span>
                     <%--<span class="icon-bar" style="background-color: #FF869E"></span>
@@ -80,6 +84,10 @@
                     </ul>
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="txtSearch">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="btnSearch">Search</button>
+                    <br />
+                    <br />
+&nbsp;&nbsp;&nbsp;
+                    <asp:LinkButton ID="LinkButton1" runat="server" CssClass="signin" OnClick="LinkButton1_Click">SIGN IN</asp:LinkButton>
                 </div>
             </div>
         </nav>
@@ -93,7 +101,7 @@
                     <a class="navbar-brand" href="#">
                         <img src="Content/Catalog/H2B Logo.png" class="d-inline-block align-top" alt="" id="imgLogo2" />
                     </a>
-                    <p class="text-right">&copy; <%: DateTime.Now.Year %> - HowToBasic</p>
+                    <p class="text-right">&copy;2022 - HowToBasic</p>
                 </div>
             </footer>
         </div>
