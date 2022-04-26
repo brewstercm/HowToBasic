@@ -16,7 +16,7 @@ namespace HowToBasic
         {
             if (!Page.IsPostBack)
             {
-                string keywords = Request.QueryString("keywords");
+                string keywords = Request.QueryString["keywords"];
                 //sql statement: Select * From Tutorials Where name = keywords
                 //display the thumbnails of these tutorials
             }
