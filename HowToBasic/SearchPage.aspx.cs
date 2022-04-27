@@ -32,7 +32,7 @@ namespace HowToBasic
             {
                 conn.ConnectionString = WebConfigurationManager.ConnectionStrings["HTBConnectionString"].ConnectionString;
                 SqlCommand cmd = new SqlCommand();
-                cmd.CommandText = "SELECT TutorialThumbnail, TutorialLink FROM Tutorials T INNER JOIN Categories C ON C.CategoryID = T.CategoryID  WHERE C.CategoryName = '" + keywords + "'";
+                cmd.CommandText = "SELECT TutorialThumbnail, TutorialLink FROM Tutorials T INNER JOIN Categories C ON C.CategoryID = T.CategoryID  WHERE T.TutorialTitle LIKE '%" + keywords + "%'";
 
                 cmd.Connection = conn;
                 conn.Open();
