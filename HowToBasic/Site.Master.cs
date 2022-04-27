@@ -12,7 +12,7 @@ namespace HowToBasic
 
         protected void btnSearch_Click1(object sender, EventArgs e)
         {
-            Response.Redirect("SearchPage.aspx?keywords =" + txtSearch.Text);
+            Response.Redirect("SearchPage.aspx?keywords=" + txtSearch.Text);
         }
     }
 }
