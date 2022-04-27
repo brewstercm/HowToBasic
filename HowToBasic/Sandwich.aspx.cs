@@ -7,12 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace HowToBasic
 {
-    public partial class SiteMaster : MasterPage
+    public partial class Sandwich : System.Web.UI.Page
     {
-
-        protected void btnSearch_Click1(object sender, EventArgs e)
+        protected void Page_Load(object sender, EventArgs e)
         {
-            Response.Redirect("SearchPage.aspx?keywords =" + txtSearch.Text);
+            
         }
     }
 }

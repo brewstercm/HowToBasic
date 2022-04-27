@@ -7,21 +7,21 @@ using System.Web.UI.WebControls;
 
 namespace HowToBasic
 {
-    public partial class _Default : Page
+    public partial class Coding : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected void ImageButton3_Click(object sender, ImageClickEventArgs e)
+        protected void BulletedList1_Click(object sender, BulletedListEventArgs e)
         {
-            Response.Redirect("Coding");
+
         }
 
-        protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+        protected void Menu1_MenuItemClick(object sender, MenuEventArgs e)
         {
-            Response.Redirect("Sandwich");
+
         }
     }
 }
