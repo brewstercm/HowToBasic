@@ -14,5 +14,14 @@ namespace HowToBasic
 
         }
 
+        protected void ImageButton3_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("Coding");
+        }
+
+        protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("Sandwich");
+        }
     }
 }

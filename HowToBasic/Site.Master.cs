@@ -14,14 +14,9 @@ namespace HowToBasic
 
         }
 
-        protected void btnSearch_Click(object sender, EventArgs e)
-        { 
-           Response.Redirect("SearchPage.aspx?keywords =" + txtSearch.Text);
-        }
-
-        protected void LinkButton1_Click(object sender, EventArgs e)
+        protected void btnSearch_Click1(object sender, EventArgs e)
         {
-
+            Response.Redirect("SearchPage.aspx?keywords =" + txtSearch.Text);
         }
     }
 }

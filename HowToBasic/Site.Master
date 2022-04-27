@@ -84,7 +84,7 @@
                     </ul>
                     <div class="form-inline">
                         <asp:TextBox ID="txtSearch" cssclass="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" runat="server"></asp:TextBox>
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="btnSearch">Search</button>
+                        <asp:button cssclass="btn btn-outline-success my-2 my-sm-0" type="submit" id="btnSearch" runat="server" Text="Search" OnClick="btnSearch_Click1"></asp:button>
                     </div>
                 </div>
             </div>
