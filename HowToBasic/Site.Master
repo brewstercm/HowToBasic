@@ -82,12 +82,10 @@
                             <a class="nav-link" href="Categories" id="linkCategories" style="color: #fff">Manage Categories <span class="sr-only">(current)</span></a>
                         </li>
                     </ul>
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="txtSearch">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="btnSearch">Search</button>
-                    <br />
-                    <br />
-&nbsp;&nbsp;&nbsp;
-                    <asp:LinkButton ID="LinkButton1" runat="server" CssClass="signin" OnClick="LinkButton1_Click">SIGN IN</asp:LinkButton>
+                    <div class="form-inline">
+                        <asp:TextBox ID="txtSearch" cssclass="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" runat="server"></asp:TextBox>
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="btnSearch">Search</button>
+                    </div>
                 </div>
             </div>
         </nav>
