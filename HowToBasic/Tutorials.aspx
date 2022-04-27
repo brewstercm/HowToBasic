@@ -46,7 +46,10 @@
         </div>
         <div class="row">
             <div class="col-sm-2">
-                <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+                <asp:Button ID="btnAddTutorial" runat="server" Text="Submit" OnClick="btnAddTutorial_Click" />
+                <asp:Button ID="btnSaveTutorial" runat="server" CssClass="btn btn-primary" Text="Save" Visible="False" OnClick="btnSaveTutorial_Click" />
+                <asp:Button ID="btnCancel" runat="server" CssClass="btn btn-secondary" Text="Cancel" Visible="False" OnClick="btnCancel_Click" />
+                <asp:Label ID="lblTutorialId" runat="server" Visible="False"></asp:Label>
             </div>
             <div class ="col-sm-10">
                 <asp:Label ID="lblFeedback" runat="server" Visible="False"></asp:Label>
@@ -57,7 +60,24 @@
         <div class="row">
 
         </div>
-        <asp:GridView ID="gvTutorialList" runat="server" AutoGenerateColumns="False" CssClass="table table-striped">
+        <asp:GridView ID="gvTutorialList" runat="server" AutoGenerateColumns="False" CssClass="table table-striped" OnRowCommand="gvTutorialList_RowCommand" OnRowDataBound="gvTutorialList_RowDataBound">
+            <Columns>
+                <asp:BoundField DataField="TutorialID" HeaderText="ID" />
+                <asp:BoundField DataField="CategoryID" HeaderText="Category ID" />
+                <asp:BoundField DataField="DateCreated" HeaderText="Date Created" />
+                <asp:BoundField DataField="TypeID" HeaderText="Type ID" />
+                <asp:BoundField DataField="TutorialTitle" HeaderText="Title" />
+                <asp:BoundField DataField="TutorialLink" HeaderText="Link" />
+                <asp:BoundField DataField="TutorialThumbnail" HeaderText="Thumbnail" />
+                <asp:TemplateField HeaderText="Actions">
+                    <ItemTemplate>
+                        <asp:Button ID="btnEdit" runat="server" CssClass="btn btn-primary" Text="Edit" CommandName="EditTutorial" />
+                        <asp:Button ID="btnDelete" runat="server" CssClass="btn btn-danger"
+                            OnClientClick="return confirm('Are you sure you want to delete this tutorial?')" Text="Delete" CommandName="DeleteTutorial" />
+                    </ItemTemplate>
+                </asp:TemplateField>
+
+            </Columns>
         </asp:GridView>
     </asp:Panel>
 </asp:Content>
