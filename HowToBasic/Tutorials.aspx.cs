@@ -74,6 +74,7 @@ namespace HowToBasic
                 }
                 lblFeedback.Visible = true;
                 lblFeedback.Text = "The tutorial was added successfully.";
+                bindTutorialList();
             }
             
         }
