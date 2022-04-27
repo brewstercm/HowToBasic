@@ -13,5 +13,15 @@ namespace HowToBasic
         {
 
         }
+
+        protected void BulletedList1_Click(object sender, BulletedListEventArgs e)
+        {
+
+        }
+
+        protected void Menu1_MenuItemClick(object sender, MenuEventArgs e)
+        {
+
+        }
     }
 }

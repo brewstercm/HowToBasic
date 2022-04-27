@@ -10390,3 +10390,28 @@ codingTitle {
     font-weight: bold;
     font-size: large;
 }
+.newStyle2 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: medium;
+    text-align: center;
+    text-indent: 4in;
+    white-space: normal;
+}
+.codingbody2 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: medium;
+    font-weight: bolder;
+    color: #00FF00;
+}
+.codingTypes {
+    text-indent: 5in;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.codingbody3 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: x-large;
+    color: #00FF00;
+}
