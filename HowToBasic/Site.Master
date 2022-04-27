@@ -60,7 +60,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-light" id="Menu" runat="server">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="Default">
                     <img src="Content/Catalog/H2B Logo.png" class="d-inline-block align-top" alt="" id="imgLogo" />
                 </a>
                 <p class="newStyle1" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: larger; color: #fff">HowToBasic</p>
