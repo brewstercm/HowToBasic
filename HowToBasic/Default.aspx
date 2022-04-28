@@ -16,13 +16,13 @@
         <div class="col-md-4">
             <h8>Archery</h8>
             <p>
-                <asp:image ID="codingImg" runat="server"  />
+                <asp:ImageButton ID="ImageButton4" runat="server" ImageUrl="https://clipartix.com/wp-content/uploads/2017/03/Free-sports-archery-clipart-clip-art-pictures-graphics-3.jpg" />
             </p>
         </div>
         <div class="col-md-4">
             <h8>Coding!</h8>
             <p>
-                <asp:ImageButton ID="ImageButton3" runat="server" ImageUrl="https://imageio.forbes.com/blogs-images/forbestechcouncil/files/2019/01/canva-photo-editor-8-7.png?format=png&amp;width=1200" OnClick="ImageButton3_Click" />
+                <asp:ImageButton ID="ImageButton3" runat="server" ImageUrl="https://www.zdnet.com/a/img/resize/8974d46cae052b00495ab2989e14523134ca610b/2021/07/19/8a337c80-5ed6-43a1-98fb-b981d420890f/programming-languages-shutterstock-1680857539.jpg?width=770&height=578&fit=crop&auto=webp" OnClick="ImageButton3_Click" />
             </p>
         </div>
     </div>

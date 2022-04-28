@@ -6,7 +6,7 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <title><%: Page.Title %> - HowToBasic</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -88,7 +88,7 @@
                         <br />
                         <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <asp:LinkButton ID="LinkButton1" runat="server">SIGN IN</asp:LinkButton>
+                        <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/SignIn.aspx">SIGN IN</asp:LinkButton>
                     </div>
                 </div>
             </div>
