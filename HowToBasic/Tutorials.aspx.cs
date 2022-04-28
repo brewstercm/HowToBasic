@@ -66,7 +66,7 @@ namespace HowToBasic
                     cmd.Parameters.AddWithValue("@dateCreated", DateTime.Now);
                     cmd.Parameters.AddWithValue("@typeID", ddlType.SelectedValue);
                     cmd.Parameters.AddWithValue("@tutorialTitle", txtTitle.Text.Trim());
-                    cmd.Parameters.AddWithValue("@tutorialLink", txtTutorialLink.Text.Trim());
+                    cmd.Parameters.AddWithValue("@tutorialLink", txtTutorialLink.Text);
                     cmd.Parameters.AddWithValue("@tutorialThumbnail", txtTutorialThumbnail.Text.Trim());
                     cmd.Connection = conn;
                     conn.Open();

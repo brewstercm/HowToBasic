@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Tutorials.aspx.cs" Inherits="HowToBasic.Tutorials" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Tutorials.aspx.cs" Inherits="HowToBasic.Tutorials" ValidateRequest="false"  %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <h2>Create Tutorial</h2>
     <asp:Panel ID="pnlCreateTutorial" runat="server">
@@ -33,7 +33,7 @@
                 <label for="txtTutorialLink">Tutorial Link:</label>
             </div>
             <div class="col-sm-10">
-                <asp:TextBox ID="txtTutorialLink" placeholder="Enter tutorial link" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtTutorialLink" placeholder="Enter tutorial link" runat="server" ></asp:TextBox>
             </div>
         </div>
         <div class="row">

@@ -13,15 +13,13 @@ namespace HowToBasic
 {
     public partial class SearchPage : System.Web.UI.Page
     {
-        static string redirect = "";
+        //static string redirect = "";
 
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!Page.IsPostBack)
             {
                 string keywords = Request.QueryString["keywords"];
-                //sql statement: Select * From Tutorials Where name = keywords
-                //display the thumbnails of these tutorials
                 BindCategoryDDL(keywords);
             }
         }
@@ -40,26 +38,27 @@ namespace HowToBasic
                 SqlDataReader sdr = cmd.ExecuteReader();
                 StringBuilder sb = new StringBuilder();
 
-                if (sdr.Read()) {
-                    sb.Append("<div class = col-lg-3>");
-                    sb.Append("<img src='/Content/Catalog/");
-                    sb.Append(sdr["TutorialThumbnail"].ToString()); //either
-                    sb.Append("'>");
-                    sb.Append("</div>");
+                if (sdr.Read())
+                {
+                    //sb.Append("<div class = col-lg-3>");
+                    //sb.Append("<img src='/Content/Catalog/");
+                    //sb.Append(sdr["TutorialThumbnail"].ToString()); //either
+                    //sb.Append("'>");
+                    //sb.Append("</div>");
 
 
-                    searchedTutorial.ImageUrl = sdr["TutorialThumbnail"].ToString(); //or
-                    redirect = sdr["TutorialLink"].ToString();
+                    displayPage.Text = sdr["TutorialLink"].ToString(); //or
+                    //redirect = sdr["TutorialLink"].ToString();
                 }
-                
 
-                
+
+
             }
         }
 
-        protected void searchedTutorial_Click(object sender, ImageClickEventArgs e)
-        {
-            Response.Redirect(redirect);
-        }
+        //protected void searchedTutorial_Click(object sender, ImageClickEventArgs e)
+        //{
+        //    Response.Redirect(redirect);
+        //}
     }
 }
