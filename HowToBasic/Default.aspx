@@ -16,7 +16,7 @@
         <div class="col-md-4">
             <h8>Archery</h8>
             <p>
-                <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="https://www.pngitem.com/pimgs/m/226-2263641_hunting-clipart-archery-hunting-bow-and-arrow-clipart.png" />
+                <asp:image ID="codingImg" runat="server"  />
             </p>
         </div>
         <div class="col-md-4">
