@@ -9,6 +9,14 @@ namespace HowToBasic
 {
     public partial class SiteMaster : MasterPage
     {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (Session["email"] != null)
+            {
+                LinkButton1.Text = "SIGN OUT";
+                LinkButton1.PostBackUrl = "~/SignOut.aspx";
+            }
+        }
 
         protected void btnSearch_Click1(object sender, EventArgs e)
         {

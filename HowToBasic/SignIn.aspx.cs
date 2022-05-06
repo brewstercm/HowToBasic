@@ -32,7 +32,7 @@ namespace HowToBasic
                 if (VerifyLogin(email, hashedPassword))
                 {
                     Session["email"] = email;
-                    Response.Redirect("Default.aspx");
+                    Response.Redirect("Default");
                 }
                 else
                 {

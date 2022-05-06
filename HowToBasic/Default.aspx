@@ -16,7 +16,7 @@
         <div class="col-md-4">
             <h8>Archery</h8>
             <p>
-                <asp:ImageButton ID="ImageButton4" runat="server" ImageUrl="https://clipartix.com/wp-content/uploads/2017/03/Free-sports-archery-clipart-clip-art-pictures-graphics-3.jpg" />
+                <asp:ImageButton ID="ImageButton4" runat="server" ImageUrl="https://clipartix.com/wp-content/uploads/2017/03/Free-sports-archery-clipart-clip-art-pictures-graphics-3.jpg" OnClick="ImageButton4_Click" />
             </p>
         </div>
         <div class="col-md-4">

@@ -30,7 +30,7 @@
         </div>
         <div class="row">
             <div class="col-sm-2">
-                <label for="txtTutorialLink">Tutorial Link:</label>
+                <label for="txtTutorialLink">Tutorial Content:</label>
             </div>
             <div class="col-sm-10">
                 <asp:TextBox ID="txtTutorialLink" placeholder="Enter tutorial link" runat="server" ></asp:TextBox>

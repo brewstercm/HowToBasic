@@ -137,6 +137,8 @@
     <Content Include="Sandwich.aspx" />
     <Content Include="SearchPage.aspx" />
     <Content Include="SignIn.aspx" />
+    <Content Include="SignOut.aspx" />
+    <Content Include="TutorialPage.aspx" />
     <Content Include="Tutorials.aspx" />
     <Content Include="Type.aspx" />
     <Content Include="WebForm1.aspx" />
@@ -340,6 +342,13 @@
     <Compile Include="SignIn.aspx.designer.cs">
       <DependentUpon>SignIn.aspx</DependentUpon>
     </Compile>
+    <Compile Include="SignOut.aspx.cs">
+      <DependentUpon>SignOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignOut.aspx.designer.cs">
+      <DependentUpon>SignOut.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -353,6 +362,13 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="TutorialPage.aspx.cs">
+      <DependentUpon>TutorialPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TutorialPage.aspx.designer.cs">
+      <DependentUpon>TutorialPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Tutorials.aspx.cs">
       <DependentUpon>Tutorials.aspx</DependentUpon>
